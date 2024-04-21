@@ -5,30 +5,24 @@ body {
   background-color:#ffce84;
   display: flex;
   flex-wrap: wrap;
- 
-  
   align-items: center;
   min-height: 100vh;
 }
 
 /*titulo*/
-.titulo{
- 
-  padding: 20px;
-  
+.titulo{ 
+  padding: 20px;  
   align-items: center;
   position: absolute;
   top: 50px;
   width: 100%;
-  text-align: center; 
-  
+  text-align: center;   
 }
 
 
 .titulo h1{
   font-size: 30px;
-  margin: 0;
-  
+  margin: 0;  
 }
 
 
@@ -64,7 +58,6 @@ body {
   padding: 10px;
   margin: 0;
   font-size: 16px;
-
 }
 
 .tarjeta .precio {
@@ -95,12 +88,10 @@ body {
   .tarjeta {
       max-width: none;
       margin: 20px ; 
-    
           }
           .titulo:first-child {
             margin-top: 190px; 
-            padding: 0;
-           
+            padding: 0;           
           }
           .tarjeta:nth-child(2){
             margin-top: 350px; 
@@ -108,11 +99,8 @@ body {
           
 }
 
-
-
 .tarjeta:hover{
   border: solid 2px blue;
- 
 }
 
 
@@ -121,13 +109,10 @@ body {
 .menu {
   background-color:#eeb45d;
   padding: 8px;
-  display: flex;
-  
-  
+  display: flex;   
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-
   top: 0;
   left: 0;
   width: 100%;
@@ -154,8 +139,7 @@ body {
 @media (max-width : 420px) {
   .menu {
     flex-direction: column;
-    gap: 8px;
-    
+    gap: 8px;  
   }
   
   .espacio-menu {
