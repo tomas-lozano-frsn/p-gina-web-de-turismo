@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#ffce84;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*titulo*/
+.titulo{
+ 
+  padding: 20px;
+  
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center; 
+  
+}
+
+
+.titulo h1{
+  font-size: 30px;
+  margin: 0;
+  
+}
+
+
+
+/*tarjetas turisticas*/
+
+.tarjeta {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px rgb(0, 0, 0);
+    margin: 50px; 
+    margin-top: 90px;
+    padding: 10px  ;
+}
+
+
+.tarjeta h2 {
+  font-size: 25px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.tarjeta img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.tarjeta p {
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+
+}
+
+.tarjeta .precio {
+  font-size: 24px;
+  color: #ff6600;
+  margin-top: 10px;
+}
+
+.tarjeta .boton {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.tarjeta .boton:hover{
+  color: black;
+}
+
+/* cosas para la pantallas más pequeñas */
+
+@media screen and (max-width: 420px) {
+  .tarjeta {
+      max-width: none;
+      margin: 20px ; 
+    
+          }
+          .titulo:first-child {
+            margin-top: 190px; 
+            padding: 0;
+           
+          }
+          .tarjeta:nth-child(2){
+            margin-top: 350px; 
+          }
+          
+}
+
+
+
+.tarjeta:hover{
+  border: solid 2px blue;
+ 
+}
+
+
+/* menu */
+
+.menu {
+  background-color:#eeb45d;
+  padding: 8px;
+  display: flex;
+  
+  
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.espacio-menu {
+  height: 55px;
+}
+
+.nav-item {
+  color:black;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #d4912c;
+}  
+
+
+
+/* cosas para la pantallas más pequeñas */
+@media (max-width : 420px) {
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+    
+  }
+  
+  .espacio-menu {
+    height: 243px;
+  }
+}
